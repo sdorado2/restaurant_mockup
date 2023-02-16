@@ -1,0 +1,100 @@
+body{
+    background-color: #25383D;
+}
+
+.top {
+  border: solid black;
+  border-left: none;
+  border-right: none;
+  width: 60vw;
+  height: 5vh;
+  margin: auto;
+}
+
+.logo {
+  /* border : solid red; */
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 28px;
+  color : #fda50c;
+}
+
+.menu {
+  border: solid yellow;
+  display: flex;
+  width: 50vw;
+  height: 8vh;
+  margin: auto;
+}
+
+.breakfast {
+  /* border: solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  color : #fda50c;
+
+}
+
+.lunch {
+  /* border: solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  color : #fda50c;
+
+}
+
+.dinner {
+  /* border: solid maroon; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  color : #fda50c;
+
+}
+
+.picture {
+  border: solid purple;
+  width: 70vw;
+  height: 40vh;
+  margin: auto;
+}
+
+.featurePic {
+}
+
+.menuList {
+  border: solid red;
+  width: 3vh;
+  height: 5vh;
+}
+
+.foodList {
+  border: solid red;
+  width: 3vh;
+  height: 5vh;
+  color : #fda50c;
+  display : flex;
+
+}
+
+.foodImg{
+    width: 100%;
+}
+
+.foodInf, .foodText{
+    font-size: 16px;
+
+}
+
+/* .drinkList {
+  border: solid red;
+  width: 3vh;
+  height: 5vh;
+  color : #fda50c;
+} */
