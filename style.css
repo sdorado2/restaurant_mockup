@@ -1,5 +1,6 @@
-body{
-    background-color: #25383D;
+body {
+  background-color: #25383d;
+  height: 100vh;
 }
 
 .top {
@@ -17,11 +18,11 @@ body{
   justify-content: center;
   font-family: monospace;
   font-size: 28px;
-  color : #fda50c;
+  color: #fda50c;
 }
 
 .menu {
-  border: solid yellow;
+  /* border: solid yellow; */
   display: flex;
   width: 50vw;
   height: 8vh;
@@ -29,67 +30,92 @@ body{
 }
 
 .breakfast {
-  /* border: solid blue; */
+  border: solid #fda50c;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 33%;
-  color : #fda50c;
+  color: #fda50c;
+}
 
+.breakfast:hover {
+  background-color: #fda50c;
+  border: double black;
+  color: white;
 }
 
 .lunch {
-  /* border: solid green; */
+  border: solid #fda50c;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 33%;
-  color : #fda50c;
+  color: #fda50c;
+}
 
+.lunch:hover {
+  background-color: #fda50c;
+  border: double black;
+  color: white;
 }
 
 .dinner {
-  /* border: solid maroon; */
+  border: solid #fda50c;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 33%;
-  color : #fda50c;
+  color: #fda50c;
+}
 
+.dinner:hover {
+  background-color: #fda50c;
+  border: double black;
+  color: white;
 }
 
 .picture {
-  border: solid purple;
-  width: 70vw;
+  /* border: solid purple; */
+  width: 75vw;
   height: 40vh;
   margin: auto;
 }
 
 .featurePic {
+  width: 100%;
+  height: 100%;
 }
 
 .menuList {
-  border: solid red;
-  width: 3vh;
-  height: 5vh;
+  /* border: solid green; */
+  width: 60vw;
+  height: 40vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .foodList {
   border: solid red;
-  width: 3vh;
-  height: 5vh;
-  color : #fda50c;
-  display : flex;
-
+  width: 15vw;
+  height: 30vh;
+  color: #fda50c;
+  /* display : flex; */
+  /* justify-content: center; */
+  margin: 1em;
 }
 
-.foodImg{
-    width: 100%;
+.foodImg {
+  width: 100%;
+}
+.foodText {
+  font-size: 20px;
 }
 
-.foodInf, .foodText{
-    font-size: 16px;
-
+.foodInfo {
+  font-size: 16px;
+  font-style: oblique;
 }
 
 /* .drinkList {

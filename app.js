@@ -7,35 +7,35 @@ let menu = {
     food: [
       {
         name: "Tamales",
-        img: "",
+        img: "../img/tamales.jpg",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam eum similique autem explicabo, praesentium molestiae! Nulla pariatur modi inventore praesentium incidunt porro odit rerum cum.",
       },
       {
         name: "Huevos Revueltos",
-        img: "",
+        img: "../img/hrev.jpg",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam eum similique autem explicabo, praesentium molestiae! Nulla pariatur modi inventore praesentium incidunt porro odit rerum cum.",
       },
       {
         name: "Guajolota",
-        img: "",
+        img: "../img/gua.jpg",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam eum similique autem explicabo, praesentium molestiae! Nulla pariatur modi inventore praesentium incidunt porro odit rerum cum.",
-      }
+      },
     ],
 
     drinks: [
       {
-        name: "Champorado",
-        img: "",
+        name: "Champurrado",
+        img: "../img/chapu.jpg",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam eum similique autem explicabo, praesentium molestiae! Nulla pariatur modi inventore praesentium incidunt porro odit rerum cum.",
       },
       {
         name: "Arroz con Leche",
-        img: "",
+        img: "../img/acl.jpg",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam eum similique autem explicabo, praesentium molestiae! Nulla pariatur modi inventore praesentium incidunt porro odit rerum cum.",
       },
       {
         name: "Cafe",
-        img: "",
+        img: "../img/cafe.jpg",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam eum similique autem explicabo, praesentium molestiae! Nulla pariatur modi inventore praesentium incidunt porro odit rerum cum.",
       },
     ],
@@ -185,20 +185,95 @@ let menu = {
 //   },
 // };
 
-const itemList =()=>{
-    let fudList = document.querySelector('.foodList');
+const loadItems = () => {
+  menu.morning.food.forEach((obj) => {
+    createItemList(obj);
+  });
+};
 
-    let boxOne = document.createElement('div');
-    boxOne.setAttribute('class', 'foodlist');
+const createItemList = (obj) => {
+  let fudList = document.querySelector(".menuList");
 
-    let foodImg = document.createElement('img');
-    foodImg.setAttribute('class', 'foodPic');
+  let boxOne = document.createElement("div");
+  boxOne.setAttribute("class", "foodList");
 
-    let foodName = document.createElement('div');
-    foodName.setAttribute('class', 'foodText');
-    foodName.innerHTML = menu.morning.food.name;
+  let foodImg = document.createElement("img");
+  foodImg.setAttribute("src", obj.img);
+  foodImg.setAttribute("class", "foodImg");
+  boxOne.append(foodImg);
 
-    let foodDesc = document.createElement('div');
-    foodDesc.setAttribute('class', 'foodInfo');
-    food.innerHTML = menu.morning.food.text;
-}
+  let foodName = document.createElement("div");
+  foodName.setAttribute("class", "foodText");
+  foodName.innerHTML = obj.name;
+  boxOne.append(foodName);
+
+  let foodDesc = document.createElement("div");
+  foodDesc.setAttribute("class", "foodInfo");
+  foodDesc.innerHTML = obj.text;
+  boxOne.append(foodDesc);
+
+  console.log("success!");
+  fudList.append(boxOne);
+};
+
+const loadItems1 = () => {
+  menu.lunch.food.forEach((obj) => {
+    createItemList(obj);
+  });
+};
+
+const createItemList1 = (obj) => {
+  let fudList = document.querySelector(".menuList");
+
+  let boxOne = document.createElement("div");
+  boxOne.setAttribute("class", "foodList");
+
+  let foodImg = document.createElement("img");
+  foodImg.setAttribute("src", obj.img);
+  foodImg.setAttribute("class", "foodImg");
+  boxOne.append(foodImg);
+
+  let foodName = document.createElement("div");
+  foodName.setAttribute("class", "foodText");
+  foodName.innerHTML = obj.name;
+  boxOne.append(foodName);
+
+  let foodDesc = document.createElement("div");
+  foodDesc.setAttribute("class", "foodInfo");
+  foodDesc.innerHTML = obj.text;
+  boxOne.append(foodDesc);
+
+  console.log("success!");
+  fudList.append(boxOne);
+};
+
+const loadItems2 = () => {
+  menu.dinner.food.forEach((obj) => {
+    createItemList(obj);
+  });
+};
+
+const createItemList2 = (obj) => {
+  let fudList = document.querySelector(".menuList");
+
+  let boxOne = document.createElement("div");
+  boxOne.setAttribute("class", "foodList");
+
+  let foodImg = document.createElement("img");
+  foodImg.setAttribute("src", obj.img);
+  foodImg.setAttribute("class", "foodImg");
+  boxOne.append(foodImg);
+
+  let foodName = document.createElement("div");
+  foodName.setAttribute("class", "foodText");
+  foodName.innerHTML = obj.name;
+  boxOne.append(foodName);
+
+  let foodDesc = document.createElement("div");
+  foodDesc.setAttribute("class", "foodInfo");
+  foodDesc.innerHTML = obj.text;
+  boxOne.append(foodDesc);
+
+  console.log("success!");
+  fudList.append(boxOne);
+};
